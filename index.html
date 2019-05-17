@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="game">
+            <div class="field"></div>
+            <div class="panel">
+                <input type="number" class="time" placeholder='Время в мс' value='1000'>
+                <span>Счет: Игрок - <span class="pl">0</span> / Компьютер - <span class="comp">0</span></span>
+                <button class="btn">Начать</button>
+                <button class="stop">Stop</button>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div class="cover"></div>
+            <div class="modal">
+                <div class="content">
+                    <span> Игрок - <span class="pl">0</span> / Компьютер - <span class="comp">0</span></span>
+                </div>
+            </div>
+        </div>
+        <script
+                src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

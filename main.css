@@ -1,0 +1,74 @@
+.panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+div[class^="row-"],
+div[class*=" row-"] {
+    display: flex;
+    flex-direction: row;
+}
+
+div[class^="element-"],
+div[class*=" element-"] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.red {
+    background: red;
+}
+
+.cover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 100;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: scroll;
+    padding: 20px;
+    z-index: 200;
+}
+
+.content {
+    display: none;
+    width: 100%;
+    min-width: 200px;
+    position: relative;
+    background-color: #FAFAFA;
+    z-index: 300;
+    padding: 50px 0;
+}
